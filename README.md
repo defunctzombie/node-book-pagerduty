@@ -1,6 +1,6 @@
 # book-pagerduty
 
-[Pagertudy](http://www.pagerduty.com/) notifier for panic logs from [book](https://github.com/defunctzombie/node-book)
+[Pagerduty](http://www.pagerduty.com/) notifier for panic logs from [book](https://github.com/defunctzombie/node-book)
 
 ```js
 var log = require('book').default();
