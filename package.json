@@ -1,0 +1,35 @@
+{
+  "name": "book-pagerduty",
+  "version": "0.0.0",
+  "description": "pagerduty notifier for panic logs",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --ui qunit --reporter list --check-leaks -- test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/defunctzombie/node-book-pagerduty.git"
+  },
+  "keywords": [
+    "book",
+    "pagerduty"
+  ],
+  "author": "Roman Shtylman <shtylman@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/defunctzombie/node-book-pagerduty/issues"
+  },
+  "homepage": "https://github.com/defunctzombie/node-book-pagerduty",
+  "devDependencies": {
+    "book": "1.3.1",
+    "mocha": "2.0.1",
+    "nock": "0.51.0"
+  },
+  "dependencies": {
+    "retry": "0.6.1",
+    "superagent": "0.21.0"
+  }
+}
