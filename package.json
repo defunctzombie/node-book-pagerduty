@@ -1,6 +1,6 @@
 {
   "name": "book-pagerduty",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "pagerduty notifier for panic logs",
   "main": "index.js",
   "directories": {
