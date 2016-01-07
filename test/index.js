@@ -17,6 +17,7 @@ test('should send a trigger request', function(done) {
     .post('/generic/2010-04-15/create_event.json', {
         service_key: 'e93facc04764012d7bfb002500d5d1a6',
         event_type: 'trigger',
+        incident_key: 'test error',
         description: 'test error'
     })
     .reply(200);
@@ -32,12 +33,14 @@ test('should retry on a 403', function(done) {
     .post('/generic/2010-04-15/create_event.json', {
         service_key: 'e93facc04764012d7bfb002500d5d1a6',
         event_type: 'trigger',
+        incident_key: 'test error',
         description: 'test error'
     })
     .reply(403)
     .post('/generic/2010-04-15/create_event.json', {
         service_key: 'e93facc04764012d7bfb002500d5d1a6',
         event_type: 'trigger',
+        incident_key: 'test error',
         description: 'test error'
     })
     .reply(200)
@@ -55,6 +58,7 @@ test('should send details if available', function(done) {
     .post('/generic/2010-04-15/create_event.json', {
         service_key: 'e93facc04764012d7bfb002500d5d1a6',
         event_type: 'trigger',
+        incident_key: 'test error',
         description: 'test error',
         details: {
             foo: 'bar'

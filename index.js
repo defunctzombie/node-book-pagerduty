@@ -28,6 +28,7 @@ module.exports = function(uri) {
         var body = {
             service_key: service_key,
             event_type: 'trigger',
+            incident_key: this.message,
             description: this.message
         };
 
