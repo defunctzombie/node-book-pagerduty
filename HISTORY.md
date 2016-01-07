@@ -1,4 +1,4 @@
-# UNRELEASED
+# 0.2.0 (2016-01-07)
 
   * set incendent_key to message string for PD de-dup
 
